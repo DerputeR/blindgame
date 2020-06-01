@@ -5,7 +5,7 @@ dtPrevious = dt;
 // Update internal delta time
 dt = delta_time/1000000;
 // Set raw unsteady delta time affected by time scale
-global.dt_unsteady = dt*scale;
+global.dt_unsteady = dt*global.timeScale;
 
 // Prevent delta time from exhibiting sporadic behaviour
 if (dt > 1/minFPS)
@@ -26,6 +26,6 @@ else
 }
 
 // Assign internal delta time to global delta time affected by the time scale
-global.dt_steady = dt*scale;
+global.dt_steady = dt*global.timeScale;
 
 

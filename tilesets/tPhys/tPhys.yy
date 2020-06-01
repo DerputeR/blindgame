@@ -1,8 +1,8 @@
 {
-    "id": "296a62be-77a2-432d-acfe-34907426f4ab",
+    "id": "404fa47e-ce2c-48f1-90a5-64cb2a90f538",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tWall",
+    "name": "tPhys",
     "auto_tile_sets": [
         
     ],
@@ -15,9 +15,9 @@
         ]
     },
     "out_columns": 2,
-    "out_tilehborder": 0,
-    "out_tilevborder": 0,
-    "spriteId": "f9d51913-7910-442a-8103-81905578019e",
+    "out_tilehborder": 2,
+    "out_tilevborder": 2,
+    "spriteId": "c34aa82f-2e28-4f3f-8f08-36dccbe461d3",
     "sprite_no_export": true,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "tile_animation": {
@@ -25,8 +25,7 @@
         "FrameData": [
             0,
             1,
-            2,
-            3
+            2
         ],
         "SerialiseFrameCount": 1
     },
@@ -34,7 +33,7 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 4,
+    "tile_count": 3,
     "tileheight": 16,
     "tilehsep": 0,
     "tilevsep": 0,
