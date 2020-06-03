@@ -22,7 +22,6 @@ if (!global.gamePaused && !global.gamePausedScene)
 	xSpeed = lengthdir_x(moveMag * walkSpeed, moveDir);
 	ySpeed = lengthdir_y(moveMag * walkSpeed, moveDir);
 
-
-	PlayerCollision();
+	PlayerMovement();
 }
 

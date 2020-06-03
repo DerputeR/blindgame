@@ -17,9 +17,11 @@ pulseDog = false;
 walkSpeed = 3;
 xSpeed = 0;
 ySpeed = 0;
+_xSpeedScaled = 0;
+_ySpeedScaled = 0;
+xSpeedLast = 0;
+ySpeedLast = 0;
 
-xStart = x;
-yStart = y;
 xLast = x;
 yLast = y;
 xNew = x;
@@ -41,4 +43,3 @@ cooldownDog = 5;
 // TIMINGS
 accumulator = 0;
 mTick = 0;
-totalTicks = 0;

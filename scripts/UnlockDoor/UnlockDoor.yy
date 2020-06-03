@@ -1,8 +1,8 @@
 {
-    "id": "7be49b4a-0b43-497c-81af-f1586aea6c54",
+    "id": "6ae51d45-af08-4546-8f73-65b050c646ff",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "PlayerCollision",
+    "name": "UnlockDoor",
     "IsCompatibility": false,
     "IsDnD": false
 }

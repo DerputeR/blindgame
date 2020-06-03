@@ -1,18 +1,18 @@
 {
-    "id": "12849568-ae6d-4ddb-a679-bf56beae0a5f",
+    "id": "40665cb4-54be-4264-9e31-78564b9aeabc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oDoor",
+    "name": "BrushTrigger",
     "eventList": [
         {
-            "id": "8ab1fe37-d253-4e91-b563-5414852fd8dd",
+            "id": "b9d48065-157d-4ecb-98c0-0606f125164c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "collisionObjectId": "01047bb3-ca10-4a3a-a303-6c6fb79a6f95",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "12849568-ae6d-4ddb-a679-bf56beae0a5f"
+            "eventtype": 4,
+            "m_owner": "40665cb4-54be-4264-9e31-78564b9aeabc"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "11fb04e1-a150-4ba7-a1d0-92a6b77a733d",
+            "id": "a3544805-5bab-4edb-abd8-2b03962aef0f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -41,27 +41,13 @@
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "True",
-            "varName": "locked",
-            "varType": 3
+            "resourceFilter": 16,
+            "value": "UnlockDoor",
+            "varName": "script",
+            "varType": 5
         },
         {
-            "id": "9cc4267c-ba2f-4d8f-9fcb-ad3ed83e1893",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "False",
-            "varName": "opened",
-            "varType": 3
-        },
-        {
-            "id": "57331684-fd2e-4ea8-b363-3c4884a1a02d",
+            "id": "0ea36bea-6469-4d01-8abb-7a89f9207142",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -71,11 +57,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "keyNum",
-            "varType": 1
+            "varName": "arg",
+            "varType": 0
         }
     ],
-    "solid": true,
-    "spriteId": "f8af55d5-6b61-4420-a2c8-f101d61179c0",
+    "solid": false,
+    "spriteId": "121762ee-205c-4941-ab84-d3f6c5edccf8",
     "visible": true
 }
