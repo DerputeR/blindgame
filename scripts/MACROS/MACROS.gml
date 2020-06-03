@@ -1,4 +1,4 @@
-#macro TILE_SIZE 8
+#macro TILE_SIZE 16
 
 //#macro ROOM_START rMainMenu
 //#macro ROOM_DEBUG rDebug

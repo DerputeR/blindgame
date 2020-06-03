@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "25bc4ed2-491c-4cfc-a36a-f67d0612b9e0",
+            "Value": {
+                "id": "11df7837-7eed-43b8-8e65-97da8b50718b",
+                "resourcePath": "sprites\\sPlayerDebug\\sPlayerDebug.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "27c126ff-4c1b-413a-ae57-7f1444647a87",
             "Value": {
                 "id": "609f8c88-c70e-42ff-be16-35f79ec33a93",
@@ -491,6 +499,14 @@
             "Value": {
                 "id": "8d816adc-526e-48e3-a6a0-5f14c88043fb",
                 "resourcePath": "scripts\\light_add_to_world\\light_add_to_world.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7be49b4a-0b43-497c-81af-f1586aea6c54",
+            "Value": {
+                "id": "82caeaa5-45ad-4854-9cd6-526482cc7206",
+                "resourcePath": "scripts\\PlayerCollision\\PlayerCollision.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -981,7 +997,8 @@
         "3efd9d36-f4e9-4931-8cf7-113d75c93e9c",
         "ab54a712-5b9d-4388-8375-b3501845852b",
         "67f04608-7f1b-4d76-8f81-a7c369858ad5",
-        "24a54134-af20-41c0-9b38-951ef8ee163d"
+        "24a54134-af20-41c0-9b38-951ef8ee163d",
+        "7be49b4a-0b43-497c-81af-f1586aea6c54"
     ],
     "tutorial": ""
 }

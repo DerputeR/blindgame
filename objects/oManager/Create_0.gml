@@ -7,13 +7,13 @@ global.gamePaused = false;
 global.gamePausedScene = false;
 
 // KEYBINDS (ADD IN SETTINGS LATER)
-kcLeft = ord("A");
-kcRight = ord("D");
-kcUp = ord("W");
-kcDown = ord("S");
+global.kcLeft = ord("A");
+global.kcRight = ord("D");
+global.kcUp = ord("W");
+global.kcDown = ord("S");
 
-kcAttack = mb_left;
-kcAttack2 = mb_right;
-kcUse = ord("E");
+global.kcAttack = mb_left;
+global.kcAttack2 = mb_right;
+global.kcUse = ord("E");
 
-kcPause = vk_escape;
+global.kcPause = vk_escape;
