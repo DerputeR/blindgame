@@ -25,8 +25,11 @@ yLast = y;
 xNew = x;
 yNew = y;
 
-xSubdivision = max(ceil(sprite_width / TILE_SIZE), 1);
-ySubdivision = max(ceil(sprite_height / TILE_SIZE), 1);
+xSubdivision = max(ceil((sprite_width+1) / TILE_SIZE), 1);
+ySubdivision = max(ceil((sprite_height+1) / TILE_SIZE), 1);
+
+xParts = (sprite_width-1)/xSubdivision;
+yParts = (sprite_height-1)/ySubdivision;
 
 // DEGREES
 moveDir = 0;

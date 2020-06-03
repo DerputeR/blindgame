@@ -1,6 +1,5 @@
 //currently broken
 // @description HANDLE PLAYER COLLISION
-var _col = false;
 var _xCol = false;
 var _yCol = false;
 var _catchUpTick = 0;
@@ -27,14 +26,17 @@ while (mTick > 0)
 	var _xSpeedScaled = xSpeed * ((global.DT_STEP_PHYS-_catchUpTick)/global.DT_STEP_PHYS);
 	var _ySpeedScaled = ySpeed * ((global.DT_STEP_PHYS-_catchUpTick)/global.DT_STEP_PHYS);
 	
+	var xTarget = 0;
+	var yTarget = 0;
+	
 	for (var row = 0; row <= xSubdivision; row++)
 	{
 		for (var i = 0; i <= ySubdivision; i++)
 		{
 			if (row == 0 || i == 0 || row == xSubdivision || i == ySubdivision)
 			{
-				var xTarget = (i*((sprite_width - 1)/xSubdivision));
-				var yTarget = (row*((sprite_height - 1)/ySubdivision));
+				xTarget = (i*(xParts));
+				yTarget = (row*(yParts));
 				
 				// Calculate next game tick's movement
 				// HORIZONTAL TILES
@@ -48,6 +50,9 @@ while (mTick > 0)
 						show_debug_message("X col at row " + string(row) + ", index " + string(i));
 						show_debug_message("X col at x: " + string(xTarget) + ", y: " + string(yTarget));
 						show_debug_message("X-sub: " + string(xSubdivision) + ", Y-sub: " + string(ySubdivision));
+						show_debug_message("X-last: " + string(xLast) + ", Y-last: " + string(yLast));
+						show_debug_message("X-new: " + string(xNew) + ", Y-new: " + string(yNew));
+						show_debug_message("X: " + string(x) + ", Y: " + string(y));
 					}
 				}				
 
@@ -62,6 +67,9 @@ while (mTick > 0)
 						show_debug_message("V col at row " + string(row) + ", index " + string(i));
 						show_debug_message("V col at x: " + string(xTarget) + ", y: " + string(yTarget));
 						show_debug_message("X-sub: " + string(xSubdivision) + ", Y-sub: " + string(ySubdivision));
+						show_debug_message("X-last: " + string(xLast) + ", Y-last: " + string(yLast));
+						show_debug_message("X-new: " + string(xNew) + ", Y-new: " + string(yNew));
+						show_debug_message("X: " + string(x) + ", Y: " + string(y));
 					}
 				}
 			}
@@ -81,22 +89,23 @@ while (mTick > 0)
 	
 	if (_xCol)
 	{
-		xNew = xNew - (xNew mod TILE_SIZE);
 		if (_xSpeedScaled > 0)
 		{
-			xNew += (TILE_SIZE - 1);
+			//xNew = xNew - ((xNew + sprite_width) mod TILE_SIZE) + (TILE_SIZE-1);
+			xNew = xNew - ((xNew + sprite_width - 1) mod TILE_SIZE) + (TILE_SIZE - 1);
 		}
+		else xNew = xNew - (xNew mod TILE_SIZE);
 	}
 	else xNew = xNew + _xSpeedScaled;
 	
 	
 	if (_yCol)
 	{
-		yNew = yNew - (yNew mod TILE_SIZE);
 		if (_ySpeedScaled > 0)
 		{
-			yNew += (TILE_SIZE - 1);
+			yNew = yNew - ((yNew + sprite_height - 1) mod TILE_SIZE) + (TILE_SIZE - 1);
 		}
+		else yNew = yNew - (yNew mod TILE_SIZE);
 	}
 	else yNew = yNew + _ySpeedScaled;
 	
@@ -129,4 +138,4 @@ while (accumulator > global.DT_STEP_PHYS)
 	totalTicks++;
 }
 
-return _col;
+return [_xCol, _yCol];
