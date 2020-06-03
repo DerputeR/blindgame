@@ -1,24 +1,19 @@
 // @description HANDLE PLAYER COLLISION
-// @argument[] object(s) to check for collision
 var _xCol = false;
 var _yCol = false;
 
 var _xNew = xNew;
 var _yNew = yNew;
 
-var xWhole = floor(abs(xNew))*sign(xNew);
-var yWhole = floor(abs(yNew))*sign(yNew);
-
-
 if (!_xCol)
 {
-	if (!place_free(xWhole + _xSpeedScaled, yNew))
+	if (!place_free(xNew + _xSpeedScaled, yNew))
 	{
 		var xBit = 0;
 			
-		while (place_free(xWhole + xBit, yNew))
+		while (place_free(xNew + xBit, yNew))
 		{
-			_xNew = xWhole + xBit;
+			_xNew = xNew + xBit;
 			xBit += sign(_xSpeedScaled);
 		}
 		_xCol = true;
@@ -27,12 +22,12 @@ if (!_xCol)
 	
 if (!_yCol)
 {
-	if (!place_free(_xNew, yWhole + _ySpeedScaled))
+	if (!place_free(_xNew, yNew + _ySpeedScaled))
 	{
 		var yBit = 0;
-		while (place_free(_xNew, yWhole + yBit))
+		while (place_free(_xNew, yNew + yBit))
 		{
-			_yNew = yWhole + yBit;
+			_yNew = yNew + yBit;
 			yBit += sign(_ySpeedScaled);
 		}
 		_yCol = true;
@@ -49,7 +44,7 @@ if (!_yCol)
 //}
 
 
-if (!_xCol) _xNew = xWhole + _xSpeedScaled;
-if (!_yCol) _yNew = yWhole + _ySpeedScaled;
+if (!_xCol) _xNew = xNew + _xSpeedScaled;
+if (!_yCol) _yNew = yNew + _ySpeedScaled;
 
 return [_xNew, _yNew, _xCol, _yCol]
