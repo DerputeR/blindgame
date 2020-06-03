@@ -14,7 +14,7 @@ pulseProbe = false;
 pulseDog = false;
 
 // PIXELS PER SECOND
-walkSpeed = 3;
+walkSpeed = 1;
 xSpeed = 0;
 ySpeed = 0;
 _xSpeedScaled = 0;
@@ -35,6 +35,7 @@ yParts = (sprite_height-1)/ySubdivision;
 
 // DEGREES
 moveDir = 0;
+lookDir = 0;
 
 // COOLDOWNS (IN SECONDS)
 cooldownProbe = 1;

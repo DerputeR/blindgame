@@ -23,5 +23,8 @@ if (!global.gamePaused && !global.gamePausedScene)
 	ySpeed = lengthdir_y(moveMag * walkSpeed, moveDir);
 
 	PlayerMovement();
+	
+	// INTERACTION
+	lookDir = point_direction(x, y, mouse_x, mouse_y);
 }
 

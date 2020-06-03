@@ -11,8 +11,14 @@ halfHeight = camera_get_view_height(cam) * 0.5;
 lastXx = 0;
 lastYy = 0;
 
-xTo = xstart;
-yTo = ystart;
+if (instance_exists(follow))
+{
+	x = follow.x
+	y = follow.y;
+}
+
+xTo = x;
+yTo = y;
 
 // SCREENSHAKE
 shakeLength = 0;
