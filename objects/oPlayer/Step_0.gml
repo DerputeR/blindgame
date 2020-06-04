@@ -26,5 +26,18 @@ if (!global.gamePaused && !global.gamePausedScene)
 	
 	// INTERACTION
 	lookDir = point_direction(x, y, mouse_x, mouse_y);
+	lookX = lengthdir_x(reachDist, lookDir);
+	lookY = lengthdir_y(reachDist, lookDir);
+	
+	// Doors and such
+	if (keyUse)
+	{
+		var instUse = collision_line(x, y, x+lookX, y+lookY, _objInteractable, true, true);
+		if (instUse != noone && !instUse.use)
+		{
+			show_debug_message("used " + string(instUse));
+			instUse.use = true;
+		}
+	}
 }
 

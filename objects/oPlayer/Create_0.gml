@@ -6,6 +6,7 @@ physMap = layer_tilemap_get_id(layer_get_id("Phys"));
 image_speed = 0;
 
 // MECHANICS
+reachDist = 50;
 stressLevel = 0;
 stressMultiplier = 1;
 
@@ -38,6 +39,8 @@ yParts = (sprite_height-1)/ySubdivision;
 // DEGREES
 moveDir = 0;
 lookDir = 0;
+lookX = 0;
+lookY = 0;
 
 // COOLDOWNS (IN SECONDS)
 cooldownProbe = 1;

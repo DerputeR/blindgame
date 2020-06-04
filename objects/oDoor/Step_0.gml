@@ -1,12 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (position_meeting(mouse_x, mouse_y, self))
+with (self)
 {
-	if (mouse_check_button_pressed(global.kcAttack) && !self.locked && !self.opened)
+	if (use)
 	{
-		self.opened = true;
-		self.image_angle-=90;
-		self.solid=false;
+		if (!locked)
+		{
+			opened = !opened;
+			if (opened)
+			{
+				image_angle-=90;
+			}
+			else
+			{
+				image_angle+=90;
+			}
+		}
+		use = !use;
 	}
+	inCol = (place_meeting(x, y, oPlayer));
+	if (opened) solid = false
+	else if (!opened && !inCol) solid=true;
 }
