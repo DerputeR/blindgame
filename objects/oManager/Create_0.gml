@@ -17,3 +17,5 @@ global.kcAttack2 = mb_right;
 global.kcUse = ord("E");
 
 global.kcPause = vk_escape;
+
+room_goto(r0);

@@ -14,7 +14,9 @@ pulseProbe = false;
 pulseDog = false;
 
 // PIXELS PER SECOND
-walkSpeed = 1;
+walkSpeed = 128 * global.DT_STEP_PHYS;
+
+// PIXELS PER TICK (RUNTIME)
 xSpeed = 0;
 ySpeed = 0;
 _xSpeedScaled = 0;

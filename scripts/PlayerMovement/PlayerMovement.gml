@@ -29,12 +29,6 @@ while (mTick > 0)
 	xNew = calcPos[0];
 	yNew = calcPos[1];
 	
-	//xNew += _xSpeedScaled;
-	//yNew += _ySpeedScaled;
-	
-	//show_debug_message(calcPos[2]);
-	//show_debug_message(calcPos[3]);
-	
 	_catchUpTick = 0;
 	mTick--;
 }

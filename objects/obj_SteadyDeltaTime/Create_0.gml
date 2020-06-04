@@ -94,8 +94,8 @@ minFPS = 10; // Default: 10 -- Not too hot, not too cold, but just right
 global.timeScale = 1.0; // Default: 1.0 -- Set higher to increase speed and lower to decrease speed
 
 // USER TIME STEP VARIABLES
-// 64 physics ticks per second
-global.DT_STEP_PHYS = 1/64
+// 50 physics ticks per second
+global.DT_STEP_PHYS = 1/50
 
 
 
