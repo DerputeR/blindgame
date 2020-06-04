@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 // Longest a pulse can last = 4 seconds
-pulseLifeMax = 4;
+pulseLifeMax = 5;
 pulseLife = pulseLifeMax;
 // 8 bounces MAX
 collisionCost = 0.5
 
 // PIXELS PER SECOND
-pulseSpeed = 6;
+pulseSpeed = 4;
 xSpeed = 0;
 ySpeed = 0;
 xSpeedLast = 0;

@@ -58,7 +58,7 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "arg",
-            "varType": 0
+            "varType": 4
         }
     ],
     "solid": false,

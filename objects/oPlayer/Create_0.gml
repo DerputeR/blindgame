@@ -1,6 +1,5 @@
 // DEBUG
 // SETUP
-physMap = layer_tilemap_get_id(layer_get_id("Phys"));
 image_speed = 0;
 
 // MECHANICS

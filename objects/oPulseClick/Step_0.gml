@@ -13,7 +13,7 @@ if (pulseLife == 0)
 var _firstTick = true;
 
 // MOTION AND COLLISION
-if (pulseLife > 0)
+if (pulseLife > 0 && !global.gamePaused && !global.gamePausedScene)
 {
 	while (mTick > 0)
 	{
