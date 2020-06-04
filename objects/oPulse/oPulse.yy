@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oPulse",
     "eventList": [
-        
+        {
+            "id": "5237c132-957c-471a-beda-25190a5fb4ee",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "10cf9315-70c5-4db3-a003-9368a2b22f0a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

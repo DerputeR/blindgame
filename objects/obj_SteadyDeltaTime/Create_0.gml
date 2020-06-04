@@ -91,7 +91,13 @@ minFPS = 10; // Default: 10 -- Not too hot, not too cold, but just right
 // The scale factor to multiply with delta time.
 // Can be used to create global slow/fast motion affects.
 // Negative values can be used, but are not advised under normal circumstances.
-scale = 1.0; // Default: 1.0 -- Set higher to increase speed and lower to decrease speed
+global.timeScale = 1.0; // Default: 1.0 -- Set higher to increase speed and lower to decrease speed
+
+// USER TIME STEP VARIABLES
+// 50 physics ticks per second
+global.DT_STEP_PHYS = 1/50
+
+
 
 //***************
 // DON'T TOUCH //
