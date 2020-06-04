@@ -2,7 +2,7 @@
     "id": "10cf9315-70c5-4db3-a003-9368a2b22f0a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oPulse",
+    "name": "oPulseClick",
     "eventList": [
         {
             "id": "5237c132-957c-471a-beda-25190a5fb4ee",
@@ -12,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "10cf9315-70c5-4db3-a003-9368a2b22f0a"
+        },
+        {
+            "id": "856b3aae-b731-4546-842e-05fe24201fef",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "10cf9315-70c5-4db3-a003-9368a2b22f0a"
         }
     ],

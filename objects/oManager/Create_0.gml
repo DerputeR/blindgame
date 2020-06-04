@@ -21,4 +21,13 @@ global.kcDebug = vk_f1;
 
 global.kcPause = vk_escape;
 
-room_goto(r0);
+// RESOLUTION
+global.aspectRatio = [16, 9];
+
+global.camResW = 640;
+global.camResH = 360;
+
+global.viewResW = 1280;
+global.viewResH = 720;
+
+room_goto(r01);

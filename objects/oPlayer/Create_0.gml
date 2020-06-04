@@ -1,6 +1,5 @@
 // DEBUG
 // SETUP
-physMap = layer_tilemap_get_id(layer_get_id("Phys"));
 image_speed = 0;
 
 // MECHANICS
@@ -11,6 +10,12 @@ stressMultiplier = 1;
 pulseClicker = true;
 pulseProbe = false;
 pulseDog = false;
+
+// ACTIONS PER SECOND
+rateClick = 1;
+
+// MAX PROJECTILES
+maxClick = 2;
 
 // PIXELS PER SECOND
 walkSpeed = 128 * global.DT_STEP_PHYS;
@@ -45,5 +50,7 @@ cooldownProbe = 1;
 cooldownDog = 5;
 
 // TIMINGS
-accumulator = 0;
+mAccumulator = 0;
 mTick = 0;
+pClickAccumulator = 0;
+canFire = true;

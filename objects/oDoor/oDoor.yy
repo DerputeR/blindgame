@@ -52,7 +52,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "True",
+            "value": "False",
             "varName": "locked",
             "varType": 3
         },
@@ -83,6 +83,48 @@
             "value": "0",
             "varName": "keyNum",
             "varType": 1
+        },
+        {
+            "id": "5c3c50dd-c62f-4331-b30a-72f968b7eac2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "doubleDoor",
+            "varType": 3
+        },
+        {
+            "id": "bcac3d11-6bf0-4e10-a9c7-fb2237b2be41",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "90",
+            "varName": "openAngle",
+            "varType": 0
+        },
+        {
+            "id": "9d4505b7-2688-4be6-baa2-b4d96d597eb4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "openTime",
+            "varType": 0
         }
     ],
     "solid": true,
