@@ -4,7 +4,7 @@ var _firstTick = true;
 // FOR MID-TICK MOVEMENT CHANGES - CAUSES SOME JITTER DUE TO OVERRIDE OF LERP 
 //if (((xSpeedLast != xSpeed) || (ySpeedLast != ySpeed)))
 //{
-//	_catchUpTick = accumulator;
+//	_catchUpTick = mAccumulator;
 //	mTick++;
 //}
 
@@ -34,14 +34,14 @@ while (mTick > 0)
 }
 
 // LERP TO NEW LOCATION
-var s = clamp(accumulator/global.DT_STEP_PHYS, 0, 1);
+var s = clamp(mAccumulator/global.DT_STEP_PHYS, 0, 1);
 x = lerp(xLast, xNew, s);
 y = lerp(yLast, yNew, s);
 
 // TIMING
-accumulator += global.dt_steady;
-while (accumulator > global.DT_STEP_PHYS)
+mAccumulator += global.dt_steady;
+while (mAccumulator > global.DT_STEP_PHYS)
 {
-	accumulator -= global.DT_STEP_PHYS;
+	mAccumulator -= global.DT_STEP_PHYS;
 	mTick++;
 }

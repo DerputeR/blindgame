@@ -21,4 +21,8 @@ global.kcDebug = vk_f1;
 
 global.kcPause = vk_escape;
 
+// GLOBAL TICKS
+global.physAccumulator = 0;
+global.physTick = 0;
+
 room_goto(r0);

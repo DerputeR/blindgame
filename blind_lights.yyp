@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "04026ff1-09ed-4df8-8f5e-ca8c8be10d0a",
+            "Value": {
+                "id": "b4d218bc-7343-4295-a911-03b01bab4c2f",
+                "resourcePath": "scripts\\PlayerPulseClick\\PlayerPulseClick.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0468fcb2-422d-4deb-955e-079019f4177e",
             "Value": {
                 "id": "37c72bc7-d761-4dd3-8272-8a3427523110",
@@ -106,7 +114,7 @@
             "Key": "10cf9315-70c5-4db3-a003-9368a2b22f0a",
             "Value": {
                 "id": "3e7eb082-4f62-42e9-bed1-84a81a3da638",
-                "resourcePath": "objects\\oPulse\\oPulse.yy",
+                "resourcePath": "objects\\oPulseClick\\oPulseClick.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1106,7 +1114,8 @@
         "28eaaf0c-4e2b-4c8e-8441-b50f8e8579f9",
         "d19cbba7-ae5d-48df-a24e-d6f86121ee68",
         "6ae51d45-af08-4546-8f73-65b050c646ff",
-        "188b94ef-628b-4fb4-a948-40044284cb12"
+        "188b94ef-628b-4fb4-a948-40044284cb12",
+        "04026ff1-09ed-4df8-8f5e-ca8c8be10d0a"
     ],
     "tutorial": ""
 }

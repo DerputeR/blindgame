@@ -1,4 +1,4 @@
-// @description HANDLE PLAYER COLLISION
+// @description HANDLE COLLISION
 var _xCol = false;
 var _yCol = false;
 

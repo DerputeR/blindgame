@@ -1,2 +1,2 @@
 /// @description LAYER MANAGEMENT
-layer_set_visible("Brushes", false);
+layer_set_visible("Brushes", global.debug);

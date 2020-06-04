@@ -39,5 +39,7 @@ if (!global.gamePaused && !global.gamePausedScene)
 			instUse.use = true;
 		}
 	}
+	
+	PlayerPulseClick();
 }
 
