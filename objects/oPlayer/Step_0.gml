@@ -35,7 +35,7 @@ if (!global.gamePaused && !global.gamePausedScene)
 		var instUse = collision_line(x, y, x+lookX, y+lookY, _objInteractable, true, true);
 		if (instUse != noone && !instUse.use)
 		{
-			show_debug_message("used " + string(instUse));
+			if (global.debug) show_debug_message("used " + string(instUse));
 			instUse.use = true;
 		}
 	}

@@ -1,6 +1,4 @@
 // DEBUG
-show_debug_overlay(true);
-
 // SETUP
 physMap = layer_tilemap_get_id(layer_get_id("Phys"));
 image_speed = 0;
