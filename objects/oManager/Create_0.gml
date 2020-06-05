@@ -1,6 +1,7 @@
 /// @description Initializers
-
+// DEBUG
 global.debug = false;
+global.lights = true;
 
 // Total game pause
 global.gamePaused = false;
@@ -18,6 +19,7 @@ global.kcAttack = mb_left;
 global.kcAttack2 = mb_right;
 global.kcUse = ord("E");
 global.kcDebug = vk_f1;
+global.kcLights = ord("L");
 
 global.kcPause = vk_escape;
 

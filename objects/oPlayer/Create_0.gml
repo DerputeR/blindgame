@@ -1,4 +1,3 @@
-// DEBUG
 // SETUP
 image_speed = 0;
 
@@ -54,3 +53,7 @@ mAccumulator = 0;
 mTick = 0;
 pClickAccumulator = 0;
 canFire = true;
+
+pLight = instance_create_layer(x, y, "Lights", oLightPlayer);
+pLight.image_xscale = 0.4*image_xscale;
+pLight.image_yscale = 0.4*image_yscale;

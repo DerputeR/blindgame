@@ -7,6 +7,11 @@ if (global.debug && keyboard_check_pressed(vk_space)) show_debug_message("\n////
 
 if (global.debug && keyboard_check_pressed(ord("F"))) global.timeScale = 0.05;
 if (global.debug && keyboard_check_released(ord("F"))) global.timeScale = 1.0;
+if (global.debug && keyboard_check_pressed(global.kcLights))
+{
+	global.lights = !global.lights;
+	layer_set_visible("Lights", global.lights);
+}
 
 if keyboard_check_pressed(global.kcDebug)
 {
