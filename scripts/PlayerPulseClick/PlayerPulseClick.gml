@@ -7,7 +7,7 @@ if (canFire && keyAttack && instCount <= (maxClick*pulseCount) - pulseCount)
 		var fireDir = lookDir
 		if (pulseCount > 0)
 		{
-			fireDir = lookDir + (pulseAngle*(count/pulseCount)-(0.5*pulseAngle));
+			fireDir = lookDir - (0.5*pulseAngle) + (pulseAngle*(count/(pulseCount-1)));
 		}
 		var pClick = instance_create_layer(x, y, "Pulses", oPulseClick);
 		with pClick

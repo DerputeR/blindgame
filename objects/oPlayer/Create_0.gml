@@ -10,7 +10,7 @@ pulseClicker = true;
 pulseCount = 3;
 pulseAngle = 60;
 
-// ACTIONS PER SECOND
+// FIRERATE (x clicks per sec)
 rateClick = 1;
 
 // MAX PROJECTILES
@@ -57,3 +57,6 @@ canFire = true;
 pLight = instance_create_layer(x, y, "Lights", oLightPlayer);
 pLight.image_xscale = 0.4*image_xscale;
 pLight.image_yscale = 0.4*image_yscale;
+
+// LOOKING AT
+lastLook = noone;

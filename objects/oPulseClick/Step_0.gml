@@ -36,6 +36,8 @@ if (pulseLife > 0 && !global.gamePaused && !global.gamePausedScene)
 
 		var xBounce = calcPos[2];
 		var yBounce = calcPos[3];
+		
+		var iCol = calcPos[4];
 		if (xBounce || yBounce)
 		{
 			if (pulseLife != 0)
@@ -43,7 +45,7 @@ if (pulseLife > 0 && !global.gamePaused && !global.gamePausedScene)
 				var pLight = instance_create_layer(xLast, yLast, "Lights", oLightPoint);
 				pLight.maxIntensity = power((pulseLife/pulseLifeMax), 2);
 			}
-			pulseLife = max(pulseLife - collisionCost, 0); 
+			pulseLife = max(pulseLife - iCol.collisionCost, 0); 
 		}
 	
 		if (xBounce) xSpeed = -xSpeed;

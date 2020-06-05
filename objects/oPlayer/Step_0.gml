@@ -30,16 +30,20 @@ if (!global.gamePaused && !global.gamePausedScene)
 	lookY = lengthdir_y(reachDist, lookDir);
 	
 	var instUse = collision_line(x, y, x+lookX, y+lookY, _objInteractable, true, true);
-	
-	// Doors and such
-	if (keyUse)
+	if (instUse != noone)
 	{
-		if (instUse != noone && !instUse.use)
+		if (global.debug && instUse != lastLook) show_debug_message("Looking at " + instUse.objName);
+		// Doors and such
+		if (keyUse && !instUse.use)
 		{
-			if (global.debug) show_debug_message("used " + string(instUse));
 			instUse.use = true;
+			if (global.debug) show_debug_message("Used " + instUse.objName);
 		}
+		if (instUse != lastLook) lastLook = instUse;
 	}
+	
+	
+	
 	
 	PlayerPulseClick();
 }
