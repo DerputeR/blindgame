@@ -7,8 +7,8 @@ stressLevel = 0;
 stressMultiplier = 1;
 
 pulseClicker = true;
-pulseProbe = false;
-pulseDog = false;
+pulseCount = 3;
+pulseAngle = 60;
 
 // ACTIONS PER SECOND
 rateClick = 1;

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_inherited();
 
-initScale = 0.1;
+initScale = 0.13;
 
 image_xscale = initScale;
 image_yscale = initScale;
@@ -15,5 +15,6 @@ accumulator = 0;
 lightUpTime = 0.1;
 lifeMax = 8;
 
-// rate
-diffuse = 3;
+// magnitude
+diffuse = 1.5;
+diffusePow = 8;

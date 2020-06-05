@@ -29,10 +29,11 @@ if (!global.gamePaused && !global.gamePausedScene)
 	lookX = lengthdir_x(reachDist, lookDir);
 	lookY = lengthdir_y(reachDist, lookDir);
 	
+	var instUse = collision_line(x, y, x+lookX, y+lookY, _objInteractable, true, true);
+	
 	// Doors and such
 	if (keyUse)
 	{
-		var instUse = collision_line(x, y, x+lookX, y+lookY, _objInteractable, true, true);
 		if (instUse != noone && !instUse.use)
 		{
 			if (global.debug) show_debug_message("used " + string(instUse));
