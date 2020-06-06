@@ -13,12 +13,20 @@ else if (tProg = 1)
 	tAcc += global.dt_steady;
 	if (tAcc >= tHold)
 	{
+		global.canPause = false;
 		tProg = 2;
-		room_goto(rDestination);
+		if (rDestination == -1) game_end();
+		else if (rDestination == 0) room_restart();
+		else if (room_exists(rDestination)) room_goto(rDestination);
+		else
+		{
+			room_goto(rMainMenu);
+		}
 	}
 }
 else
 {
+	global.canPause = true;
 	image_alpha = max(image_alpha - (global.dt_steady/tEnd), 0);
 	if (image_alpha == 0)
 	{

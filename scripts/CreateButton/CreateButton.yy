@@ -1,8 +1,8 @@
 {
-    "id": "188b94ef-628b-4fb4-a948-40044284cb12",
+    "id": "72335cc0-d9d2-40dc-8ab4-ff6e3fe0a3ef",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "LoadRoom",
+    "name": "CreateButton",
     "IsCompatibility": false,
     "IsDnD": false
 }

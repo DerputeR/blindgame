@@ -1,24 +1,26 @@
+/// @description Insert description here
+// You can write your code in this editor
 /// @description
 if !surface_exists(surf)
 {
-    var _cw = power(2, ceil(log2(global.camResW)));
-    var _ch = power(2, ceil(log2(global.camResH)));
+	var _cw = power(2, ceil(log2(global.camResW)));
+	var _ch = power(2, ceil(log2(global.camResH)));
 	
-    surf = surface_create(_cw, _ch);
+	surf = surface_create(_cw, _ch);
 	
-    surface_set_target(surf);
+	surface_set_target(surf);
 	
-    draw_set_colour(c_black);
-    draw_set_alpha(0);
-    draw_rectangle(0, 0, _cw, _cw, false);
+	draw_set_colour(c_black);
+	draw_set_alpha(0);
+	draw_rectangle(0, 0, _cw, _cw, false);
 	
-    surface_reset_target();
+	surface_reset_target();
 }
 
 else
 {
 	var _cw = power(2, ceil(log2(global.camResW)));
-    var _ch = power(2, ceil(log2(global.camResH)));
+	var _ch = power(2, ceil(log2(global.camResH)));
 	var _cx = camera_get_view_x(view_camera[0]);
 	var _cy = camera_get_view_y(view_camera[0]);
 	

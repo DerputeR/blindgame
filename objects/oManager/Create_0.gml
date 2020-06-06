@@ -4,6 +4,7 @@ global.debug = false;
 global.lights = true;
 
 // Total game pause
+global.canPause = false;
 global.gamePaused = false;
 
 // Game pause due to cutscene
@@ -32,4 +33,4 @@ global.camResH = 360;
 global.viewResW = 1280;
 global.viewResH = 720;
 
-room_goto(r01);
+room_goto(rMainMenu);

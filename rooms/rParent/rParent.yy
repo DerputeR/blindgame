@@ -27,8 +27,8 @@
             "layers": [
                 {
                     "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-                    "name": "Menus",
-                    "id": "7bcaac06-36b3-4345-8c9d-d046ff4fe725",
+                    "name": "Transitions",
+                    "id": "717a7a68-a407-4419-94ad-bc03ac44989e",
                     "depth": -700,
                     "grid_x": 32,
                     "grid_y": 32,
@@ -53,8 +53,8 @@
                 },
                 {
                     "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-                    "name": "Transitions",
-                    "id": "717a7a68-a407-4419-94ad-bc03ac44989e",
+                    "name": "Menus",
+                    "id": "7bcaac06-36b3-4345-8c9d-d046ff4fe725",
                     "depth": -600,
                     "grid_x": 32,
                     "grid_y": 32,

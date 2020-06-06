@@ -15,12 +15,26 @@ if (!_xCol)
 		if (_iCol.solid)
 		{
 			var xBit = 0;
+			//var stuck = true;
 			
 			while (place_empty(xNew + xBit, yNew, _oParent))
 			{
+				//stuck = false;
 				_xNew = xNew + xBit;
 				xBit += sign(_xSpeedScaled);
 			}
+			
+			// if you get stuck in something, push out
+			//if (stuck)
+			//{
+			//	while (!place_empty(xNew + xBit, yNew, _oParent))
+			//	{
+			//		_xNew = xNew + xBit;
+			//		xBit -= sign(_xSpeedScaled);
+			//	}
+			//	stuck = false;
+			//}
+			
 			_xCol = true;
 		}
 	}
@@ -34,11 +48,26 @@ if (!_yCol)
 		if (_iCol.solid)
 		{
 			var yBit = 0;
+			//var stuck = true;
+			
 			while (place_empty(_xNew, yNew + yBit, _oParent))
 			{
+				//stuck = false;
 				_yNew = yNew + yBit;
 				yBit += sign(_ySpeedScaled);
 			}
+			
+			// if you get stuck in something, push out
+			//if (stuck)
+			//{
+			//	while (!place_empty(_xNew, yNew + yBit, _oParent))
+			//	{
+			//		_yNew = yNew + yBit;
+			//		yBit -= sign(_ySpeedScaled);
+			//	}
+			//	stuck = false;
+			//}
+			
 			_yCol = true;
 		}
 	}
