@@ -11,9 +11,13 @@ if (use)
 			if (doubleDoor == true && other.doubleDoor == true && keyNum = other.keyNum && id != other.id)
 			{
 				OpenDoor();
-				if (global.debug) show_debug_message("double door: " + string(id));
+				if (global.debug) show_debug_message("Double door: (key #" + string(keyNum) + ") opened");
 			}
 		}
+	}
+	else
+	{
+		if (global.debug) show_debug_message("Door (key #" + string(keyNum) + ") is locked");
 	}
 	use = !use;
 }

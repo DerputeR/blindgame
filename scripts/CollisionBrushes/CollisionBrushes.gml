@@ -5,46 +5,76 @@ var _yCol = false;
 var _xNew = xNew;
 var _yNew = yNew;
 
+var _iCol = noone;
+
 if (!_xCol)
 {
-	if (!place_free(xNew + _xSpeedScaled, yNew))
+	if (!place_empty(xNew + _xSpeedScaled, yNew, _oParent))
 	{
-		var xBit = 0;
-			
-		while (place_free(xNew + xBit, yNew))
+		_iCol = instance_place(xNew + _xSpeedScaled, yNew, _oParent);
+		if (_iCol.solid)
 		{
-			_xNew = xNew + xBit;
-			xBit += sign(_xSpeedScaled);
+			var xBit = 0;
+			//var stuck = true;
+			
+			while (place_empty(xNew + xBit, yNew, _oParent))
+			{
+				//stuck = false;
+				_xNew = xNew + xBit;
+				xBit += sign(_xSpeedScaled);
+			}
+			
+			// if you get stuck in something, push out
+			//if (stuck)
+			//{
+			//	while (!place_empty(xNew + xBit, yNew, _oParent))
+			//	{
+			//		_xNew = xNew + xBit;
+			//		xBit -= sign(_xSpeedScaled);
+			//	}
+			//	stuck = false;
+			//}
+			
+			_xCol = true;
 		}
-		_xCol = true;
 	}
 }
 	
 if (!_yCol)
 {
-	if (!place_free(_xNew, yNew + _ySpeedScaled))
+	if (!place_empty(_xNew, yNew + _ySpeedScaled, _oParent))
 	{
-		var yBit = 0;
-		while (place_free(_xNew, yNew + yBit))
+		_iCol = instance_place(_xNew, yNew + _ySpeedScaled, _oParent);
+		if (_iCol.solid)
 		{
-			_yNew = yNew + yBit;
-			yBit += sign(_ySpeedScaled);
+			var yBit = 0;
+			//var stuck = true;
+			
+			while (place_empty(_xNew, yNew + yBit, _oParent))
+			{
+				//stuck = false;
+				_yNew = yNew + yBit;
+				yBit += sign(_ySpeedScaled);
+			}
+			
+			// if you get stuck in something, push out
+			//if (stuck)
+			//{
+			//	while (!place_empty(_xNew, yNew + yBit, _oParent))
+			//	{
+			//		_yNew = yNew + yBit;
+			//		yBit -= sign(_ySpeedScaled);
+			//	}
+			//	stuck = false;
+			//}
+			
+			_yCol = true;
 		}
-		_yCol = true;
 	}
 }
-	
-//if (!_xCol && !_yCol)
-//{
-//	if (place_meeting(xNew + _xSpeedScaled, yNew + _ySpeedScaled, argument[0]))
-//	{
-//		_xCol = true;
-//		_yCol = true;
-//	}
-//}
 
 
 if (!_xCol) _xNew = xNew + _xSpeedScaled;
 if (!_yCol) _yNew = yNew + _ySpeedScaled;
 
-return [_xNew, _yNew, _xCol, _yCol]
+return [_xNew, _yNew, _xCol, _yCol, _iCol]

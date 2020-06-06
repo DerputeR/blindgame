@@ -1,4 +1,4 @@
-// @ unlock door(s)
+// @description unlock door(s)
 // @argument0 keyNum
 with (oDoor)
 {

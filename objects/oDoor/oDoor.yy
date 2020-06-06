@@ -26,7 +26,16 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        {
+            "id": "8a370862-a335-4a0e-a465-1ac96f2bb641",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "d88e8400-c2e7-490a-ae80-b009a3ca66c0",
+            "propertyId": "5e73e2ce-23fa-4622-b78d-00e9ec5b440b",
+            "value": "Door"
+        }
+    ],
     "parentObjectId": "d88e8400-c2e7-490a-ae80-b009a3ca66c0",
     "persistent": false,
     "physicsAngularDamping": 0.1,

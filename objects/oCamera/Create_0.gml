@@ -5,6 +5,8 @@ cTime = 0;
 cTick = 0;
 cSpeed = 5;
 
+camera_set_view_size(cam, global.camResW, global.camResH) ;
+
 halfWidth = camera_get_view_width(cam) * 0.5;
 halfHeight = camera_get_view_height(cam) * 0.5;
 
