@@ -9,6 +9,7 @@ var _hBuffer = 0.3*h;
 var _ySpace = 5;
 
 alpha = 0;
+alphaSpeed = 6;
 accumulator = 0;
 
 

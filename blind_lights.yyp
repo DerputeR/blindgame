@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "3c0d5e27-ca2f-4f81-9220-995f3aa8c1d4",
+            "Value": {
+                "id": "08ab880c-0c6d-4ce5-984f-0ac3236a3533",
+                "resourcePath": "fonts\\uiTextSub\\uiTextSub.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "3c73b2bb-1048-4a82-86c8-9f14d265043c",
             "Value": {
                 "id": "fd8d2ca1-5f96-4e7a-b4e6-b30b2c045f10",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "9ede1d8d-86e3-4dd7-9839-daa6907bfdeb",
+            "Value": {
+                "id": "c0be42c0-a415-42e1-9feb-85d48e08a526",
+                "resourcePath": "objects\\oToolTip\\oToolTip.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9f0c803d-3af3-4f60-9446-fc377b031411",
             "Value": {
                 "id": "ff71d155-87f3-4476-8b77-a5885983caef",
@@ -735,6 +751,14 @@
             }
         },
         {
+            "Key": "dfb78533-2376-4d38-9810-cb81b228d6c9",
+            "Value": {
+                "id": "3bd32294-e85d-4f0d-bf1f-a7cc0501a81b",
+                "resourcePath": "scripts\\CreateToolTip\\CreateToolTip.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e19a42c6-50ac-4f74-914e-0fc111f08849",
             "Value": {
                 "id": "c63c6a0a-d26f-4832-a5b2-d8b3c056c39e",
@@ -842,6 +866,7 @@
         "5a5f4ce2-e5be-4a0a-9049-ce027dbeb855",
         "3845ced6-5f1e-4b26-9d17-c03320433d9c",
         "72335cc0-d9d2-40dc-8ab4-ff6e3fe0a3ef",
+        "dfb78533-2376-4d38-9810-cb81b228d6c9",
         "e19a42c6-50ac-4f74-914e-0fc111f08849",
         "847cdd16-107e-4f10-bdc3-2a4de776591e",
         "b6935cb9-7c89-4d78-a9ae-c8a7caee6aa3"

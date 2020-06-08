@@ -1,8 +1,8 @@
-w = global.viewResW;
-h = global.viewResH;
+//w = global.viewResW;
+//h = global.viewResH;
 
-uiHalfW = 0.5*w;
-uiHScaled = 0.3*h;
+uiHalfW = 0.5*global.viewResW;
+uiHScaled = 0.3*global.viewResH;
 
 var _width = 300;
 var _height = 80;

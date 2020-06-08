@@ -3,9 +3,9 @@
 
 if (global.gamePaused)
 {
-	accumulator = min(1, accumulator + 6*global.dt_steady);
+	accumulator = min(1, accumulator + alphaSpeed*global.dt_steady);
 }
-else accumulator = max(0, accumulator - 6*global.dt_steady);
+else accumulator = max(0, accumulator - alphaSpeed*global.dt_steady);
 
 len = array_length_1d(elements);
 alpha = lerp(0, 1, accumulator);

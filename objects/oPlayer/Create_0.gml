@@ -2,7 +2,7 @@
 image_speed = 0;
 
 // MECHANICS
-reachDist = 50;
+reachDist = 20;
 stressLevel = 0;
 stressMultiplier = 1;
 
@@ -60,3 +60,11 @@ pLight.image_yscale = 0.4*image_yscale;
 
 // LOOKING AT
 lastLook = noone;
+toolTip = noone;
+ttAccumulator = 0;
+msg = "";
+
+// OBJECTIVE
+objectiveTip = CreateToolTip(0.5*global.viewResW, 0.75*global.viewResH, objective);
+objectiveTip.alphaSpeed = 1;
+ottAccumulator = 5;
