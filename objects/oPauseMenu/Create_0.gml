@@ -1,7 +1,7 @@
-w = display_get_gui_width();
-h = display_get_gui_height();
+w = global.viewResW;
+h = global.viewResH;
 
-var uiHalfW = 0.5*w;
+uiHalfW = 0.5*w;
 
 var _width = 300;
 var _height = 80;

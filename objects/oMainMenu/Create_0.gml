@@ -1,5 +1,5 @@
-w = display_get_gui_width();
-h = display_get_gui_height();
+w = global.viewResW;
+h = global.viewResH;
 
 uiHalfW = 0.5*w;
 uiHScaled = 0.3*h;
