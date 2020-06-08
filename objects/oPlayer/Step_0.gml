@@ -59,22 +59,30 @@ if (!global.gamePaused && !global.gamePausedScene)
 		// Doors and such
 		if (keyUse && !instUse.use)
 		{
+			msg = "";
 			instUse.use = true;
 			if (global.debug) show_debug_message("Used " + instUse.objName);
 			if (instUse.object_index == oDoor && instUse.locked)
 			{
 				msg = "The " + string(instUse.objName) + " is locked."
+				if (!instance_exists(toolTip)) toolTip = CreateToolTip(0.5*global.viewResW, 0.75*global.viewResH, msg);
+				else toolTip.text = msg;
 			}
 			if (instUse.object_index == oBed)
 			{
 				msg = "I don't feel tired"
+				if (!instance_exists(toolTip)) toolTip = CreateToolTip(0.5*global.viewResW, 0.75*global.viewResH, msg);
+				else toolTip.text = msg;
 			}
 			if (instUse.object_index == oKey)
 			{
+				instance_destroy(toolTip);
+				instance_destroy(objectiveTip);
+				ottAccumulator = 3;
 				msg = string(instUse.objName) + " collected"
+				objectiveTip = CreateToolTip(0.5*global.viewResW, 0.75*global.viewResH, msg);
+				objectiveTip.alphaSpeed = 1;
 			}
-			if (!instance_exists(toolTip)) toolTip = CreateToolTip(0.5*global.viewResW, 0.75*global.viewResH, msg);
-			else toolTip.text = msg;
 		}
 	}
 	

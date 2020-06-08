@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+instance_destroy(toolTip);
+instance_destroy(objectiveTip);
+ottAccumulator = 3;
 msg = string(other.objName) + " collected"
-if (!instance_exists(toolTip)) toolTip = CreateToolTip(0.5*global.viewResW, 0.75*global.viewResH, msg);
-else toolTip.text = msg;
+objectiveTip = CreateToolTip(0.5*global.viewResW, 0.75*global.viewResH, msg);
+objectiveTip.alphaSpeed = 1;
